@@ -1,0 +1,23 @@
+#!/bin/bash
+
+gcc *.c -o shell
+echo ./shell
+echo "/bin/ls -la" | ./shell
+echo $?
+echo -e '\n/bin/sh'
+echo "/bin/ls -la" | /bin/sh
+echo $?
+echo -e '\n./shell'
+echo "/bin/whereis ls" | ./shell
+echo $?
+echo -e '\n/bin/sh'
+echo "/bin/whereis ls" | /bin/sh
+echo $?
+echo Hello World! > new_text_file.txt
+echo -e '\n./shell'
+echo "/bin/cat new_text_file.txt" | ./shell
+echo $?
+echo -e '\n/bin/sh'
+echo "/bin/cat new_text_file.txt" | /bin/sh
+echo $?
+rm new_text_file.txt
