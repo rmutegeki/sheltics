@@ -1,0 +1,21 @@
+#!/bin/bash
+
+gcc *.c -o shell
+echo ./shell
+echo "/bin/ls" | ./shell
+echo $?
+echo -e '\n/bin/sh'
+echo "/bin/ls" | /bin/sh
+echo $?
+echo -e '\n./shell'
+echo "/bin/pwd" | ./shell
+echo $?
+echo -e '\n/bin/sh'
+echo "/bin/pwd" | /bin/sh
+echo $?
+echo -e '\n./shell'
+echo "/bin/ps" | ./shell
+echo $?
+echo -e '\n/bin/sh'
+echo "/bin/ps" | /bin/sh
+echo $?
