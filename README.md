@@ -32,4 +32,4 @@ In order to have an excellent workflow, please create a new branch with your nam
 
 Add your name and your email in the file named AUTHORS, with the following format:
 
-   last first name <email>
+    last first name <email>
