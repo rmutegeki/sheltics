@@ -1,3 +1,6 @@
+#Sheltics
+
+
 # Test Suite for ALX's Simple Shell project
 
 Repository created by students enrolled in ALX's Fullstack SE Program, cohort AFR0622, to test the Simple Shell.
@@ -13,7 +16,13 @@ Open the file `config` and update the variable `SHELL` with your shell name:
 Run the following file:
 
     ./check_simple_shell.bash
-Incases when your shell cannot be exited, use the `kill pid` command inside your running shell
+Incases when your shell cannot be exited, find the shell's pid using use `ps aux | grep simple_shell` to find your program's pid and `kill pid` inside your running shell.
+
+## Usage of @Saad's Test files
+Run:
+	./commands
+	./commands_with_arguments
+Don't forget to modify the script to suit your project
 
 ## Scripts
 Checks are written in BASH.
